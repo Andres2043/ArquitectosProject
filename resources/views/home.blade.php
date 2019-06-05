@@ -1,11 +1,15 @@
 @extends('layout')
 
 @section('home')
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
-        exercitationem expedita molestias omnis sapiente unde? Aliquam
-        aut corporis culpa, dignissimos eveniet id omnis porro quo
-        recusandae repellendus sit suscipit veniam!
-    </h1>
+    <br>
+    <h1 style="font-size: 100px; font-family: 'Comic Sans MS'; text-align: center">BIENVENIDOS...</h1>
+    <br>
+    <br>
+    <h1 style="font-size: 100px; font-family: 'Comic Sans MS'; text-align: center">Hernando Heredia Arquitectos LTDA.</h1>
+    <br>
+    <br>
+    <div class="container">
+        
+    </div>
 
     @endsection
-  @include('All.navbar')
