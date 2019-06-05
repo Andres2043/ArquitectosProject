@@ -9,8 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-
-
+  @yield('navbar')
   @yield('home')
 
 </body>

@@ -8,3 +8,4 @@
     </h1>
 
     @endsection
+  @include('All.navbar')
