@@ -11,8 +11,11 @@
 |
 */
 
-Route::get('layout',function(){
-    return view('home');
-});
 
-///Route::get('home')
+Route::view('/home','home')->name('home');
+Route::view('/QuienesSomos','quienesSomos')->name('quienesSomos');
+Route::view('/Contactos','contactos')->name('contactos');
+
+Route::post('/Contact','ContactoController@store');
+
+

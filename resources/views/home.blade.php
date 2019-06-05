@@ -1,6 +1,9 @@
 @extends('layout')
 
-@section('home')
+@section('title','Home')
+
+
+@section('contenido')
     <br>
     <h1 style="font-size: 100px; font-family: 'Comic Sans MS'; text-align: center">BIENVENIDOS...</h1>
     <br>
