@@ -12,7 +12,7 @@
 */
 
 
-Route::view('/home','home')->name('home');
+Route::view('/','home')->name('home');
 Route::view('/QuienesSomos','quienesSomos')->name('quienesSomos');
 Route::view('/Contactos','contactos')->name('contactos');
 

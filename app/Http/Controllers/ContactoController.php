@@ -43,7 +43,7 @@ class ContactoController extends Controller
             'proyecto'=>'required',
             'mensaje'=>['required','min:5']
         ]);
-        
+
     }
 
     /**
