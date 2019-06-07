@@ -31,17 +31,14 @@
                <input type="text" class="form-control" name="email" placeholder="Escriba su Correo..." value="{{ old('email') }}">
                {!!$errors->first('email', '<small>:message</small><br>') !!}
                <br>
-               <label for="">Teléfono</label>
-               <input type="text" class="form-control" name="telefono" placeholder="Escriba su Teléfono..." value="{{ old('telefono') }}">
-               {!!$errors->first('telefono', '<small>:message</small><br>') !!}
-               <br>
+
                <label for="">Proyecto de interes</label>
                <input type="text" class="form-control" name="proyecto" placeholder="Escriba su Proyecto..." value="{{ old('proyecto') }}">
                {!!$errors->first('proyecto', '<small>:message</small><br>') !!}
                <br>
                <label for="">Mensaje</label>
                <textarea name="mensaje" id="" cols="30" rows="10" class="form-control">{{ old('mensaje') }}</textarea>
-               {!!$errors->first('mensaje', '<small>:message</small><br>') !!}
+               {!! $errors->first('mensaje', '<small>:message</small><br>') !!}
                <br>
                <button class="btn btn-dark" >Enviar</button>
            </form>

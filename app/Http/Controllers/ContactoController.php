@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Usuario;
 use Illuminate\Http\Request;
 use function Symfony\Component\HttpKernel\Tests\controller_func;
 
@@ -33,17 +33,25 @@ class ContactoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(Request $request)
     {
-        \request()->validate([
+        request()->validate([
             'nombre'=>'required',
             'apellido'=>'required',
             'email'=>['required','email'],
-            'telefono'=>'required',
             'proyecto'=>'required',
             'mensaje'=>['required','min:5']
         ]);
 
+        Usuario::create([
+           'nombres'=>$request->input('nombre'),
+           'apellidos'=>$request->input('apellido'),
+           'correo'=>$request->input('email'),
+           'proyectoInteres'=>$request->input('proyecto'),
+           'descripcion'=>$request->input('mensaje'),
+        ]);
+
+        return view('home');
     }
 
     /**
